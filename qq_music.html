@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！</title>
+    <link rel="stylesheet" href="./qq_music.css"> 
+    <script type="text/javascript">
+        window.onload = function(){
+            var playlist_list = document.getElementsByClassName("playlist_list")
+            var allA = document.getElementsByClassName("nav_a");
+            var index = 0;
+            for(var i=0;i<allA.length;i++){
+
+                allA[i].num = i;
+                allA[i].onclick = function(){
+                    index = this.num;
+                    // alert(this.num);
+                    playlist_list[0].style.left = -1220*index+"px";
+
+                    
+                };
+            }
+            var debutlist = document.getElementsByClassName("debutlist")
+            var allSlideA = document.getElementsByClassName("nav_slide_a");
+            var index = 0;
+            for(var i=0;i<allSlideA.length;i++){
+
+                allSlideA[i].num = i;
+                allSlideA[i].onclick = function(){
+                    index = this.num;
+                    // alert(this.num);
+                    for(var j = 0;j<debutlist.length;j++){
+                        debutlist[j].style.left = -1200*index+"px";
+                    }
+                };
+            }
+
+        };
+    </script> 
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">
+            <div class="inner">
+                <h1 class="logo"><a href="https://y.qq.com/"><img src="./logo.png" alt="logo"></a></h1>
+                <ul class="top_nav">
+                    <li class="top_nav_item"><a>音乐馆</a></li>
+                    <li class="top_nav_item"><a>我的音乐</a></li>
+                    <li class="top_nav_item"><a>客户端</a></li>
+                    <li class="top_nav_item"><a>开放平台</a></li>
+                    <li class="top_nav_item"><a>VIP</a></li>
+                </ul>
+                <div class="search">
+                    <div class="input">
+                        <input class="input_input" type="text" placeholder="搜索音乐、MV、歌单、用户">
+                    </div>
+                    <div class="opt">
+                        <span class="mod_top_login">
+                            <a class="top_login_link">登录</a>
+                            <div class="vip">开通VIP</div>
+                            <div class="pay">充值</div>
+                        </span>
+                    </div>
+                </div>
+                <ul class="top_subnav">
+                    <li class="top_subnav_item"><a>首页</a></li>
+                    <li class="top_subnav_item"><a>歌手</a></li>
+                    <li class="top_subnav_item"><a>新碟</a></li>
+                    <li class="top_subnav_item"><a>排行榜</a></li>
+                    <li class="top_subnav_item"><a>分类歌单</a></li>
+                    <li class="top_subnav_item"><a>雷达</a></li>
+                    <li class="top_subnav_item"><a>MV</a></li>
+                    <li class="top_subnav_item"><a>数字专辑</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 内容区 -->
+        <div class="content">
+            <div class="inner">
+                <!-- 歌单推荐 -->
+                <div class="mod1">
+                    <h2 class="tit">歌单推荐</h2>
+                    <div class="tab">
+                        <a class="tab_item">为你推荐</a>
+                        <a class="tab_item">网络歌曲</a>
+                        <a class="tab_item">儿歌</a>
+                        <a class="tab_item">经典</a>
+                        <a class="tab_item">官方歌单</a>
+                        <a class="tab_item">情歌</a>
+                    </div>
+                    <!-- 歌单 -->
+                    <div class="playlist">
+                        <ul class="playlist_list">
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist1.png" alt="你印象中听的第一首周杰伦是？" width="224px"></a>
+                                <div class="text">你印象中听的第一首周杰伦是？</div>
+                                <div class="playlist_other">播放量:25.1万</div>
+                            </li>
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist2.png" alt="中文说唱 | 节奏中感受潮流" width="224px"></a>
+                                <div class="text">中文说唱 | 节奏中感受潮流</div>
+                                <div class="playlist_other">播放量:3355万</div>
+                            </li>
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist3.png" alt="沈以诚-爱冬野的少年" width="224px"></a>
+                                <div class="text">沈以诚-爱冬野的少年</div>
+                                <div class="playlist_other">播放量:35万</div>
+                            </li>
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist4.png" alt="永远都像初次见你那样使我心荡漾" width="224px"></a>
+                                <div class="text">永远都像初次见你那样使我心荡漾</div>
+                                <div class="playlist_other">播放量:150.6万</div>
+                            </li>
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist5.png" alt="XXXTentacion:传奇说唱天才" width="224px"></a>
+                                <div class="text">XXXTentacion:传奇说唱天才</div>
+                                <div class="playlist_other">播放量:807.1万</div>
+                            </li>
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist6.png" alt="[抓耳hook]难逃这惬意之境" width="224px"></a>
+                                <div class="text">[抓耳hook]难逃这惬意之境</div>
+                                <div class="playlist_other">播放量:43.3万</div>
+                            </li>
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist7.png" alt="[后朋克]旧时代式颓废" width="224px"></a>
+                                <div class="text">[后朋克]旧时代式颓废</div>
+                                <div class="playlist_other">播放量:85.7万</div>
+                            </li>
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist8.png" alt="欧美Remix·花式碰撞的别样惊喜" width="224px"></a>
+                                <div class="text">欧美Remix·花式碰撞的别样惊喜</div>
+                                <div class="playlist_other">播放量:428.0万</div>
+                            </li>
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist9.png" alt="女性嘻哈特辑·Feelin Myself" width="224px"></a>
+                                <div class="text">女性嘻哈特辑·Feelin Myself</div>
+                                <div class="playlist_other">播放量:90.2万</div>
+                            </li>
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist10.png" alt="欧美Rap|炸街必备，走路带风" width="224px"></a>
+                                <div class="text">欧美Rap|炸街必备，走路带风</div>
+                                <div class="playlist_other">播放量:968.7万</div>
+                            </li>
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist11.png" alt="一键出圈,旅行vlog里的转场bgm" width="224px"></a>
+                                <div class="text">一键出圈,旅行vlog里的转场bgm</div>
+                                <div class="playlist_other">播放量:1.1万</div>
+                            </li>
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist12.png" alt="宅家安静听歌,打造chill氛围" width="224px"></a>
+                                <div class="text">宅家安静听歌,打造chill氛围</div>
+                                <div class="playlist_other">播放量:1.2万</div>
+                            </li>
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist13.png" alt="踏上归途,是时候回到奋斗的地方" width="224px"></a>
+                                <div class="text">踏上归途,是时候回到奋斗的地方</div>
+                                <div class="playlist_other">播放量:1.3万</div>
+                            </li>
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist14.png" alt="Trap鼓点直击天灵盖系列" width="224px"></a>
+                                <div class="text">Trap鼓点直击天灵盖系列</div>
+                                <div class="playlist_other">播放量:21.8万</div>
+                            </li>
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist15.png" alt="音乐人佳作甄选,免费播放100首" width="224px"></a>
+                                <div class="text">音乐人佳作甄选,免费播放100首</div>
+                                <div class="playlist_other">播放量:173.9万</div>
+                            </li>
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist16.png" alt="女声随想,倾听噪音里的每个故事" width="224px"></a>
+                                <div class="text">女声随想,倾听噪音里的每个故事</div>
+                                <div class="playlist_other">播放量:331.8万</div>
+                            </li>
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist17.png" alt="翻唱的魅力,不同的声线和情感" width="224px"></a>
+                                <div class="text">翻唱的魅力,不同的声线和情感</div>
+                                <div class="playlist_other">播放量:211.0万</div>
+                            </li>
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist18.png" alt="尝一口爱情，苦甜参半" width="224px"></a>
+                                <div class="text">尝一口爱情，苦甜参半</div>
+                                <div class="playlist_other">播放量:628.7万</div>
+                            </li>
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist19.png" alt="Birts·2025全英音乐奖" width="224px"></a>
+                                <div class="text">Birts·2025全英音乐奖</div>
+                                <div class="playlist_other">播放量:1.1万</div>
+                            </li>
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist20.png" alt="Live|情字何解，怎落笔都不对" width="224px"></a>
+                                <div class="text">Live|情字何解，怎落笔都不对</div>
+                                <div class="playlist_other">播放量:1.1万</div>
+                            </li>
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist21.png" alt="都市奇妙|Citypop东京奇妙夜" width="224px"></a>
+                                <div class="text">都市奇妙|Citypop东京奇妙夜</div>
+                                <div class="playlist_other">播放量:1.5万</div>
+                            </li>
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist22.png" alt="洒脱欧嗓：不羁灵魂肆意生长" width="224px"></a>
+                                <div class="text">洒脱欧嗓：不羁灵魂肆意生长</div>
+                                <div class="playlist_other">播放量:1.6万</div>
+                            </li>
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist23.png" alt="滚石:21世纪最伟大的250张专辑" width="224px"></a>
+                                <div class="text">滚石:21世纪最伟大的250张专辑</div>
+                                <div class="playlist_other">播放量:1.2万</div>
+                            </li>
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist24.png" alt="复古回溯:带上耳机回到CD时代" width="224px"></a>
+                                <div class="text">复古回溯:带上耳机回到CD时代</div>
+                                <div class="playlist_other">播放量:1.6万</div>
+                            </li>
+                            <li class="playlist_item">
+                                <a class="playlist_img"><img src="./play_list/playlist25.png" alt="流行情歌:这些歌曲哭过无数人" width="224px"></a>
+                                <div class="text">流行情歌:这些歌曲哭过无数人</div>
+                                <div class="playlist_other">播放量:2.3万</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 导航按钮 -->
+                    <div class="nav_playlist" class="nav_a">
+                        <a href="javascript:;" class="nav_a">
+                            <i class="nav_bg"></i>
+                            <i><span>1</span></i>
+                        </a>
+                        <a href="javascript:;" class="nav_a">
+                            <i class="nav_bg"></i>
+                            <i><span>1</span></i>
+                        </a>
+                        <a href="javascript:;" class="nav_a">
+                            <i class="nav_bg"></i>
+                            <i><span>1</span></i>
+                        </a>
+                        <a href="javascript:;" class="nav_a">
+                            <i class="nav_bg"></i>
+                            <i><span>1</span></i>
+                        </a>
+                        <a href="javascript:;" class="nav_a">
+                            <i class="nav_bg"></i>
+                            <i><span>1</span></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- 新歌首发 -->
+                <div class="mod2">
+                    <h2 class="tit">新歌首发</h2>
+                    <div class="tab">
+                        <a class="tab_item">最新</a>
+                        <a class="tab_item">内地</a>
+                        <a class="tab_item">港台</a>
+                        <a class="tab_item">欧美</a>
+                        <a class="tab_item">韩国</a>
+                        <a class="tab_item">日本</a>
+                    </div>
+                    <div class="slide_inner">
+                        <div class="slide_list">
+                            <ul class="debutlist">
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_1_1_1.png" alt="发财歌" width="86px"></a>
+                                        <h3 class="debut_song">发财歌</h3>
+                                        <p class="debut_author">黄龄</p>
+                                        <div class="debut_time">02:51</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_1_1_2.png" alt="懂你的自由" width="86px"></a>
+                                        <h3 class="debut_song">懂你的自由</h3>
+                                        <p class="debut_author">石玺彤</p>
+                                        <div class="debut_time">03:33</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_1_1_3.png" alt="うつくしい世界" width="86px"></a>
+                                        <h3 class="debut_song">うつくしい世界</h3>
+                                        <p class="debut_author">Aimer (エメ)</p>
+                                        <div class="debut_time">04:05</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_1_2_1.png" alt="You are my sunshine" width="86px"></a>
+                                        <h3 class="debut_song">You are my sunshine</h3>
+                                        <p class="debut_author">古巨基/Kuson/Lorraine</p>
+                                        <div class="debut_time">01:43</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_1_2_2.png" alt="在风里(demo2015)" width="86px"></a>
+                                        <h3 class="debut_song">在风里(demo2015)</h3>
+                                        <p class="debut_author">谢春花</p>
+                                        <div class="debut_time">03:51</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_1_2_3.png" alt="鸾鸣盛世" width="86px"></a>
+                                        <h3 class="debut_song">鸾鸣盛世</h3>
+                                        <p class="debut_author">关大洲</p>
+                                        <div class="debut_time">03:25</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_1_3_1.png" alt="밤에 내린 눈 (Snowfall at Night)" width="86px"></a>
+                                        <h3 class="debut_song">밤에 내린 눈 (Snowfall at Night)</h3>
+                                        <p class="debut_author">D.O. (都暻秀)</p>
+                                        <div class="debut_time">02:59</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_1_3_2.png" alt="日落" width="86px"></a>
+                                        <h3 class="debut_song">日落</h3>
+                                        <p class="debut_author">孙燕姿</p>
+                                        <div class="debut_time">04:09</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_1_3_3.png" alt="赶着回家的人" width="86px"></a>
+                                        <h3 class="debut_song">赶着回家的人</h3>
+                                        <p class="debut_author">黄旭/诺米呢Lodmemo</p>
+                                        <div class="debut_time">03:22</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="debutlist">
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_1_1.png" alt="还好有你在" width="86px"></a>
+                                        <h3 class="debut_song">还好有你在</h3>
+                                        <p class="debut_author">张远</p>
+                                        <div class="debut_time">04:20</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_1_2.png" alt="念念" width="86px"></a>
+                                        <h3 class="debut_song">念念</h3>
+                                        <p class="debut_author">郁可唯</p>
+                                        <div class="debut_time">04:39</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_1_3.png" alt="暖手袋" width="86px"></a>
+                                        <h3 class="debut_song">暖手袋</h3>
+                                        <p class="debut_author">布瑞吉Bridge</p>
+                                        <div class="debut_time">03:56</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_2_1.png" alt="Answer (From 'Love Scout' : Original Soundtrack) " width="86px"></a>
+                                        <h3 class="debut_song">Answer (From "Love Scout" : Original Soundtrack) </h3>
+                                        <p class="debut_author">MINNIE (민니)</p>
+                                        <div class="debut_time">03:45</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_2_2.png" alt="BOW AND ARROW" width="86px"></a>
+                                        <h3 class="debut_song">BOW AND ARROW</h3>
+                                        <p class="debut_author">米津玄師 (よねづ けんし)</p>
+                                        <div class="debut_time">02:55</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_2_3.png" alt="圆 (粤港澳大湾区春晚主题曲)" width="86px"></a>
+                                        <h3 class="debut_song">圆 (粤港澳大湾区春晚主题曲)</h3>
+                                        <p class="debut_author">孙楠</p>
+                                        <div class="debut_time">04:04</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_3_1.png" alt="怎叹（Live 版）（CCTV-17《风物出圈记》）" width="86px"></a>
+                                        <h3 class="debut_song">怎叹（Live 版）（CCTV-17《风物出圈记》）</h3>
+                                        <p class="debut_author">刘宇</p>
+                                        <div class="debut_time">04:05</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_3_2.png" alt="路过发现一片宇宙" width="86px"></a>
+                                        <h3 class="debut_song">路过发现一片宇宙</h3>
+                                        <p class="debut_author">白举纲/胡夏/希林娜依·高/TF_ING邓佳鑫</p>
+                                        <div class="debut_time">02:26</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_3_3.png" alt="月亮代表我的心 + 我爱洗澡 (浴池Live版) " width="86px"></a>
+                                        <h3 class="debut_song">月亮代表我的心 + 我爱洗澡 (浴池Live版) </h3>
+                                        <p class="debut_author">易烊千玺</p>
+                                        <div class="debut_time">04:30</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="debutlist">
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_1_1.png" alt="还好有你在" width="86px"></a>
+                                        <h3 class="debut_song">还好有你在</h3>
+                                        <p class="debut_author">张远</p>
+                                        <div class="debut_time">04:20</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_1_2.png" alt="念念" width="86px"></a>
+                                        <h3 class="debut_song">念念</h3>
+                                        <p class="debut_author">郁可唯</p>
+                                        <div class="debut_time">04:39</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_1_3.png" alt="暖手袋" width="86px"></a>
+                                        <h3 class="debut_song">暖手袋</h3>
+                                        <p class="debut_author">布瑞吉Bridge</p>
+                                        <div class="debut_time">03:56</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_2_1.png" alt="Answer (From 'Love Scout' : Original Soundtrack) " width="86px"></a>
+                                        <h3 class="debut_song">Answer (From "Love Scout" : Original Soundtrack) </h3>
+                                        <p class="debut_author">MINNIE (민니)</p>
+                                        <div class="debut_time">03:45</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_2_2.png" alt="BOW AND ARROW" width="86px"></a>
+                                        <h3 class="debut_song">BOW AND ARROW</h3>
+                                        <p class="debut_author">米津玄師 (よねづ けんし)</p>
+                                        <div class="debut_time">02:55</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_2_3.png" alt="圆 (粤港澳大湾区春晚主题曲)" width="86px"></a>
+                                        <h3 class="debut_song">圆 (粤港澳大湾区春晚主题曲)</h3>
+                                        <p class="debut_author">孙楠</p>
+                                        <div class="debut_time">04:04</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_3_1.png" alt="怎叹（Live 版）（CCTV-17《风物出圈记》）" width="86px"></a>
+                                        <h3 class="debut_song">怎叹（Live 版）（CCTV-17《风物出圈记》）</h3>
+                                        <p class="debut_author">刘宇</p>
+                                        <div class="debut_time">04:05</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_3_2.png" alt="路过发现一片宇宙" width="86px"></a>
+                                        <h3 class="debut_song">路过发现一片宇宙</h3>
+                                        <p class="debut_author">白举纲/胡夏/希林娜依·高/TF_ING邓佳鑫</p>
+                                        <div class="debut_time">02:26</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_3_3.png" alt="月亮代表我的心 + 我爱洗澡 (浴池Live版) " width="86px"></a>
+                                        <h3 class="debut_song">月亮代表我的心 + 我爱洗澡 (浴池Live版) </h3>
+                                        <p class="debut_author">易烊千玺</p>
+                                        <div class="debut_time">04:30</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="debutlist">
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_1_1.png" alt="还好有你在" width="86px"></a>
+                                        <h3 class="debut_song">还好有你在</h3>
+                                        <p class="debut_author">张远</p>
+                                        <div class="debut_time">04:20</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_1_2.png" alt="念念" width="86px"></a>
+                                        <h3 class="debut_song">念念</h3>
+                                        <p class="debut_author">郁可唯</p>
+                                        <div class="debut_time">04:39</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_1_3.png" alt="暖手袋" width="86px"></a>
+                                        <h3 class="debut_song">暖手袋</h3>
+                                        <p class="debut_author">布瑞吉Bridge</p>
+                                        <div class="debut_time">03:56</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_2_1.png" alt="Answer (From 'Love Scout' : Original Soundtrack) " width="86px"></a>
+                                        <h3 class="debut_song">Answer (From "Love Scout" : Original Soundtrack) </h3>
+                                        <p class="debut_author">MINNIE (민니)</p>
+                                        <div class="debut_time">03:45</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_2_2.png" alt="BOW AND ARROW" width="86px"></a>
+                                        <h3 class="debut_song">BOW AND ARROW</h3>
+                                        <p class="debut_author">米津玄師 (よねづ けんし)</p>
+                                        <div class="debut_time">02:55</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_2_3.png" alt="圆 (粤港澳大湾区春晚主题曲)" width="86px"></a>
+                                        <h3 class="debut_song">圆 (粤港澳大湾区春晚主题曲)</h3>
+                                        <p class="debut_author">孙楠</p>
+                                        <div class="debut_time">04:04</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_3_1.png" alt="怎叹（Live 版）（CCTV-17《风物出圈记》）" width="86px"></a>
+                                        <h3 class="debut_song">怎叹（Live 版）（CCTV-17《风物出圈记》）</h3>
+                                        <p class="debut_author">刘宇</p>
+                                        <div class="debut_time">04:05</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_3_2.png" alt="路过发现一片宇宙" width="86px"></a>
+                                        <h3 class="debut_song">路过发现一片宇宙</h3>
+                                        <p class="debut_author">白举纲/胡夏/希林娜依·高/TF_ING邓佳鑫</p>
+                                        <div class="debut_time">02:26</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_3_3.png" alt="月亮代表我的心 + 我爱洗澡 (浴池Live版) " width="86px"></a>
+                                        <h3 class="debut_song">月亮代表我的心 + 我爱洗澡 (浴池Live版) </h3>
+                                        <p class="debut_author">易烊千玺</p>
+                                        <div class="debut_time">04:30</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="debutlist">
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_1_1.png" alt="还好有你在" width="86px"></a>
+                                        <h3 class="debut_song">还好有你在</h3>
+                                        <p class="debut_author">张远</p>
+                                        <div class="debut_time">04:20</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_1_2.png" alt="念念" width="86px"></a>
+                                        <h3 class="debut_song">念念</h3>
+                                        <p class="debut_author">郁可唯</p>
+                                        <div class="debut_time">04:39</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_1_3.png" alt="暖手袋" width="86px"></a>
+                                        <h3 class="debut_song">暖手袋</h3>
+                                        <p class="debut_author">布瑞吉Bridge</p>
+                                        <div class="debut_time">03:56</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_2_1.png" alt="Answer (From 'Love Scout' : Original Soundtrack) " width="86px"></a>
+                                        <h3 class="debut_song">Answer (From "Love Scout" : Original Soundtrack) </h3>
+                                        <p class="debut_author">MINNIE (민니)</p>
+                                        <div class="debut_time">03:45</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_2_2.png" alt="BOW AND ARROW" width="86px"></a>
+                                        <h3 class="debut_song">BOW AND ARROW</h3>
+                                        <p class="debut_author">米津玄師 (よねづ けんし)</p>
+                                        <div class="debut_time">02:55</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_2_3.png" alt="圆 (粤港澳大湾区春晚主题曲)" width="86px"></a>
+                                        <h3 class="debut_song">圆 (粤港澳大湾区春晚主题曲)</h3>
+                                        <p class="debut_author">孙楠</p>
+                                        <div class="debut_time">04:04</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_3_1.png" alt="怎叹（Live 版）（CCTV-17《风物出圈记》）" width="86px"></a>
+                                        <h3 class="debut_song">怎叹（Live 版）（CCTV-17《风物出圈记》）</h3>
+                                        <p class="debut_author">刘宇</p>
+                                        <div class="debut_time">04:05</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_3_2.png" alt="路过发现一片宇宙" width="86px"></a>
+                                        <h3 class="debut_song">路过发现一片宇宙</h3>
+                                        <p class="debut_author">白举纲/胡夏/希林娜依·高/TF_ING邓佳鑫</p>
+                                        <div class="debut_time">02:26</div>
+                                    </div>
+                                </li>
+                                <li class="debutlist_item">
+                                    <div class="debutlist_item_box">
+                                        <a class="debutlist_link"><img src="./music/music_2_3_3.png" alt="月亮代表我的心 + 我爱洗澡 (浴池Live版) " width="86px"></a>
+                                        <h3 class="debut_song">月亮代表我的心 + 我爱洗澡 (浴池Live版) </h3>
+                                        <p class="debut_author">易烊千玺</p>
+                                        <div class="debut_time">04:30</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav_slide_list" >
+                        <a href="javascript:;" class="nav_slide_a">
+                            <i class="nav_bg"></i>
+                            <i><span>1</span></i>
+                        </a>
+                        <a href="javascript:;" class="nav_slide_a">
+                            <i class="nav_bg"></i>
+                            <i><span>1</span></i>
+                        </a>
+                        <a href="javascript:;" class="nav_slide_a">
+                            <i class="nav_bg"></i>
+                            <i><span>1</span></i>
+                        </a>
+                        <a href="javascript:;" class="nav_slide_a">
+                            <i class="nav_bg"></i>
+                            <i><span>1</span></i>
+                        </a>
+                        <a href="javascript:;" class="nav_slide_a">
+                            <i class="nav_bg"></i>
+                            <i><span>1</span></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 页脚 -->
+        <div class="footer">
+            <div class="inner">
+                <div class="footer_info">
+                    <!-- 下载 -->
+                    <div class="download">
+                        <h3 class="footer_tit">下载QQ音乐</h3>
+                        <ul class="download_list">
+                            <li class="download_list_item">
+                                <a class="downlist_pc">
+                                    <i class="pc_app">
+                                        <span>QQ音乐</span>
+                                    </i>
+                                    PC版
+                                </a>
+                            </li>
+                            <li class="download_list_item">
+                                <a class="downlist_mac">
+                                    <i class="mac_app">
+                                        <span>QQ音乐</span>
+                                    </i>
+                                    Mac版
+                                </a>
+                            </li>
+                            <li class="download_list_item">
+                                <a class="downlist_Android">
+                                    <i class="Android_app">
+                                        <span>QQ音乐</span>
+                                    </i>
+                                    Android版
+                                </a>
+                            </li>
+                            <li class="download_list_item">
+                                <a class="downlist_iPhone">
+                                    <i class="iPhone_app">
+                                        <span>QQ音乐</span>
+                                    </i>
+                                    iPhone版
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 特色产品 -->
+                    <div class="product">
+                        <h3 class="footer_tit">特色产品</h3>
+                        <ul class="product_list">
+                            <li class="product_list_item">
+                                <a>
+                                    <i class="kg_app">
+                                        <span>QQ音乐</span>
+                                    </i>
+                                    全民K歌
+                                </a>
+                            </li>
+                            <li class="product_list_item">
+                                <a>
+                                    <i class="ss_app">
+                                        <span>QQ音乐</span>
+                                    </i>
+                                    银河音效
+                                </a>
+                            </li>
+                            <li class="product_list_item">
+                                <a>
+                                    <i class="qp_app">
+                                        <span>QQ音乐</span>
+                                    </i>
+                                    Qplay
+                                </a>
+                            </li>
+                            <li class="product_list_item">
+                                <a>
+                                    <i class="fan_app">
+                                        <span>QQ音乐</span>
+                                    </i>
+                                    Fan直播伴侣
+                                </a>
+                            </li>
+                            <li class="product_list_item">
+                                <a>车载互联</a>
+                            </li>
+                            <li class="product_list_item">
+                                <a>QQ演出</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="group">
+                        <h3 class="footer_tit">TME集团官网</h3>
+                        <ul class="group_list">
+                            <li class="group_list_item">
+                                <a>腾讯音乐</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="link">
+                        <h3 class="footer_tit">合作链接</h3>
+                        <ul class="link_list">
+                            <li class="link_list_item"><a>CJ ENM</a></li>
+                            <li class="link_list_item"><a>腾讯视频</a></li>
+                            <li class="link_list_item"><a>手机QQ空间</a></li>
+                            <li class="link_list_item"><a>最新版QQ</a></li>
+                            <li class="link_list_item"><a>腾讯社交广告</a></li>
+                            <li class="link_list_item"><a>电脑管家</a></li>
+                            <li class="link_list_item"><a>QQ浏览器</a></li>
+                            <li class="link_list_item"><a>腾讯微云</a></li>
+                            <li class="link_list_item"><a>腾讯云</a></li>
+                            <li class="link_list_item"><a>企鹅FM</a></li>
+                            <li class="link_list_item"><a>智能电视网</a></li>
+                            <li class="link_list_item"><a>当贝市场</a></li>
+                            <li class="link_list_item"><a>酷我音乐</a></li>
+                            <li class="link_list_item"><a>酷我听书</a></li>
+                        </ul>
+                    </div>
+                    <div class="platform">
+                        <h3 class="footer_tit">开放平台</h3>
+                        <ul class="platform_list">
+                            <li class="platform_list_item"><a>QQ音乐开放平台</a></li>
+                            <li class="platform_list_item"><a>腾讯音乐人</a></li>
+                            <li class="platform_list_item"><a>音乐推-歌曲推广</a></li>
+                            <li class="platform_list_item"><a>启明星Venus-词曲交易/歌曲推广</a></li>
+                            <li class="platform_list_item"><a>TME Studio</a></li>
+                            <li class="platform_list_item"><a>臻品音质认证</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>
+                        <a>关于腾讯</a>&nbsp;|&nbsp;
+                        <a>About Tencent</a>&nbsp;|&nbsp;
+                        <a>服务条款</a>&nbsp;|&nbsp;
+                        <a>用户服务协议</a>&nbsp;|&nbsp;
+                        <a>隐私政策</a>&nbsp;|&nbsp;
+                        <a>权利声明</a>&nbsp;|&nbsp;
+                        <a>广告服务</a>&nbsp;|&nbsp;
+                        <a>腾讯招聘</a>&nbsp;|&nbsp;
+                        <a>客服中心</a>&nbsp;|&nbsp;
+                        <a>网站导航</a>&nbsp;|&nbsp;
+                        <a>举报中心</a>
+                    </p>
+                    <p>Copyright © 1998 - 2025 Tencent. All Rights Reserved.</p>
+                    <p>
+                        腾讯公司
+                        <a>版权所有</a>&nbsp;|&nbsp;
+                        <a>营业执照</a>&nbsp;|&nbsp;
+                        网络文化经营许可证：
+                        <a>粤网文[2023]2882-203号</a>&nbsp;|&nbsp;
+                        <a>网络视听许可证1904073号</a>&nbsp;|&nbsp;
+                        客服电话
+                        <a>4006016666 </a>&nbsp;|&nbsp;
+                        违法与不良信息举报邮箱：
+                        <a>tme_musicjubao@tencentmusic.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

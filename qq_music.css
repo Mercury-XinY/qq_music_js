@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+   list-style: none; 
+   font-size: 14px;
+}
+span {
+    font-size: 0;
+    display: block;
+}
+i {
+    line-height: 37px;
+}
+a {
+    cursor: pointer;
+}
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.header {
+    margin:0 50px;
+    position: relative;
+}
+.logo {
+    position: absolute;
+    left: 22px;
+    top: 20px;
+}
+.top_nav {
+    position: absolute;
+    left: 198px;
+    top: 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+.top_subnav {
+    height: 51px;
+    line-height: 51px;
+    padding-left: 230px;
+    padding-top: 90px;
+    border-top: 1px solid #f2f2f2;
+}
+.top_nav_item {
+    float: left;
+    display: block;
+    margin: 0 20px;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    font-size: 18px;
+}
+.input {
+    position: absolute;
+    right: 284px;
+    border: 1px solid #c9c9c9;
+    padding: 0 33px 0 11px;
+    line-height: 36px;
+    margin-top: 26px;
+    border-radius: 3px;
+}
+input {
+    width: 174px;
+    height: 36px;
+    border: 0;
+    font-size: 14px;
+}
+.opt {
+    height: 90px;
+    line-height: 90px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.mod_top_login .top_login_link {
+    position: relative;
+    font-size: 16px;
+    float: left;
+    width: 38px;
+    margin-right: 10px;
+    text-align: center;
+    height: 90px;
+}
+.vip {
+    width: 122px;
+    float: left;
+    position: relative;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 24px;
+    background-color: #31c27c;
+    color: #ffffff;
+    border: 1px solid #31c27c;
+    border-radius: 3px;
+}
+.pay {
+    width: 83px;
+    margin-left: 10px;
+    float: left;
+    position: relative;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 24px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.top_subnav_item {
+    float: left;
+    font-size: 15px;
+    columns: #c1c1c1;
+    margin-right: 47px;
+}
+.content {
+    background: url(./background.png) 50% 0 repeat-x;
+}
+.tit {
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 24px;
+    width: 196px;
+    height: 40px;
+}
+.tab {
+    text-align: center;
+    height: 50px;
+}
+.tab_item {
+    display: inline-block;
+    margin: 0 24px;
+    font-size: 15px;
+}
+.playlist {
+    overflow: hidden;
+    /* position: relative; */
+}
+.playlist_list {
+    width: 1250%;
+    position: relative;
+}
+.playlist_item {
+    display: inline-block;
+    position: relative;
+    margin-right: 15px;
+}
+.text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+.playlist_other {
+    color: #999;
+    height: 22px;
+    font-size: 14px;
+}
+.nav_playlist {
+    text-align: center;
+    font-size: 0;
+    margin-top: 50px;
+}
+.nav_playlist a{
+    display: inline-block;
+    width: 28px;
+    height: 12px;
+    padding: 0 0 26px;
+    margin: 0 1px;
+}
+.nav_playlist i:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.nav_bg {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 12px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.slide_inner {
+    overflow: hidden;
+    max-width: 1200px;
+}
+.slide_list {
+    width: 1250%;
+}
+.debutlist {
+    display: inline-block;
+    width: 8%;
+    position: relative;
+}
+.debutlist_link {
+    float: left;
+    width: 86px;
+    margin-right: 14px;
+}
+.debutlist_link, .debutlist_item_box {
+    position: relative;
+    height: 86px;
+    overflow: hidden;
+}
+.debutlist_item_box {
+    width: 390px;
+}
+.debutlist_item {
+    display: inline-block;
+}
+.debut_song {
+    font-size: 14px;
+    padding: 21px 0 2px;
+    font-weight: 400;
+}
+.debut_author {
+    color: #999;
+    font-size: 14px;
+}
+.debut_time {
+    color: #999;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    line-height: 86px;
+}
+.nav_slide_list {
+    text-align: center;
+    font-size: 0;
+    margin-top: 50px;
+}
+.nav_slide_list a{
+    display: inline-block;
+    width: 28px;
+    height: 12px;
+    padding: 0 0 26px;
+    margin: 0 1px;
+}
+.nav_slide_list i:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.footer {
+    background-color: #333;
+    color: #999;
+    font-size: 14px;
+
+}
+.footer_info {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 45px;
+}
+.footer_tit {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 80px 0 30px;
+}
+.download {
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+.download_list {
+    margin-left: -29px;
+}
+.download_list_item {
+    float: left;
+    text-align: center;
+}
+.pc_app {
+    background-image: url(./footer.png) ; 
+    display: block;
+    margin: 0 29px 12px ;
+    height: 49px;
+    width: 37px;
+    background-position: -2px 0;
+}
+.mac_app {
+    background-image: url(./footer.png) ; 
+    display: block;
+    margin: 0 29px 12px;
+    height: 49px;
+    width: 46px;
+    background-position: -92px 0;
+}
+.Android_app {
+    background-image: url(./footer.png) ; 
+    display: block;
+    margin: 0 29px 12px;
+    height: 49px;
+    width: 37px;
+    background-position: -190px 0;
+}
+.iPhone_app {
+    background-image: url(./footer.png) ; 
+    display: block;
+    margin: 0 29px 12px;
+    height: 49px;
+    width: 34px;
+    background-position: -279px 0;
+}
+.product {
+    position: absolute;
+    top: 0;
+    left: 450px;
+    width: 390px;
+}
+.product_list {
+    margin-left: -25px;
+}
+.product_list_item {
+    display: inline-block;
+    margin-bottom: 18px;
+    text-indent: 25px;
+    margin-right: 5px;
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 14px;
+}
+.kg_app {
+    background-image: url(./footer.png) ; 
+    display: block;
+    margin: 0 29px 12px;
+    height: 49px;
+    width: 41px;
+    background-position: -370px 0;
+}
+.ss_app {
+    background-image: url(./footer.png) ; 
+    display: block;
+    margin: 0 29px 12px ;
+    height: 49px;
+    width: 37px;
+    background-position: -463px 0;
+}
+.qp_app {
+    background-image: url(./footer.png) ; 
+    display: block;
+    margin: 0 23px 12px 29px;
+    height: 49px;
+    width: 40px;
+    background-position: -563px 0;
+}
+.fan_app {
+    background-image: url(./footer.png) ; 
+    display: block;
+    margin: 0 23px 12px 29px;
+    height: 49px;
+    width: 40px;
+    background-position: -650px 0;
+}
+.group {
+    position: absolute;
+    top: 300px;
+    left: 476px;
+    width: 304px;
+}
+.link {
+    float: right;
+    width: 300px;
+    padding-bottom: 57px;
+}
+.link_list_item {
+    float: left;
+    min-width: 100px;
+    margin-bottom: 12px;
+}
+.platform {
+    width: 400px;
+    margin: 300px 0 0 10px;
+}
+.platform_list {
+    margin-left: -25px;
+}
+.platform_list_item {
+    float: left;
+    min-width: 100px;
+    margin: 0 5px 12px 0;
+    text-indent: 25px;
+}
+.copyright {
+    text-align: center;
+    line-height: 28px;
+    padding: 24px 0;
+    font-size: 12px;
+}
